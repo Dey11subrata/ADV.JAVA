@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+</head>
+<body>
+	<h2>Registration Form</h2>
+	
+	<form action="registrationServlet" method="post">
+	<div>
+		<label>Username:</label>
+		<input type="text" name="uname">
+	</div>
+	<div>
+		<label>Password:</label>
+		<input type="password" name="upswd">
+	</div>
+	<div>
+		<label>Gender:</label>
+		<input type="radio" name="gender" value="Male">Male
+		<input type="radio" name="gender" value="Female">Female
+	</div>
+	
+	<div>
+	<label>Language:</label>
+	<br>
+		<input type="checkbox" name="language" value="Eng.">English
+		<br>
+		<input type="checkbox" name="language" value="Hin.">Hindi
+		<br>
+		<input type="checkbox" name="language" value="Reg.">Regional
+		<br>
+		<label>Full Address:</label><br>
+		<textarea rows="3" cols="9" name="address"></textarea>
+		<br>
+	</div>
+	
+		<div>
+			<label>City:</label>
+			<select name="city">
+				<option value="Mumbai">Mumbai </option>
+				<option value="Kolkata">Kolkata</option>
+				<option value="Delhi">Delhi</option>
+			</select>
+		</div>
+			
+			<button type="submit">Register</button>
+	</form>
+</body>
+</html>
